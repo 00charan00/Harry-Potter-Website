@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
+
+
+body {
+  background-image: url("hogwarts.png");
+  background-attachment: fixed;
+  background-size: 100%;
+  z-index:1;
+  
+
+  
+  
+} 
+body::after{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: #111;
+  opacity: 0.7;
+  height:100%;
+  width:100%;
+  z-index:-1;
+
+}
+
+.hp-logo{
+  margin-left:480px;
+}
+
+#menubar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+      
+#menubar li {
+  float: left;
+}
+
+#menubar li a {
+  
+  justify-content: center;
+  
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 1;
+  letter-spacing: .1rem;
+  transition: .3s ease-out;
+}
+
+#menubar li a:hover {
+  padding-bottom: 30px;
+  background-color: #111;
+}
+#menubar li .hp-ulogo{
+  padding-top:15px;
+  scale:150%;
+  margin-left: 550px;
+}
+
+
+.main{
+  margin-bottom:-300px;
+}
+
+/* part 1 */
+
+h1{
+    padding-left:700px;
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1;
+    font-size: 3rem;
+    letter-spacing: .9rem;
+    transition: .2s ease-out;
+}
+h1:hover{
+    color: #c4c4c4;
+    
+}
+.pm{
+  margin-left: 180px;
+}
+.par {
+  display: grid;
+  align-items: left; 
+  grid-template-columns: 1fr 2fr 0.5fr;
+  column-gap: 10px;
+  margin-bottom: 120px;
+}
+
+.par .img-out{
+  border: 5px solid white;
+}
+
+.par .image {
+  scale:80%;
+  margin-left: -150px;
+  width: 100%;
+  height:100%;
+  transition: .2s ease-in;
+  
+  
+}
+.img-out{
+  position:absolute;
+  top:0px;
+  left: 40%;
+  
+  border-radius: 5px;
+
+  overflow: hidden;
+  display: inline-block;
+}
+
+.img-out:after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 20%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+.img-out:hover:after {
+  opacity: 1;
+  left: 130%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+}
+
+/* Active state */
+.img-out:active:after {
+  opacity: 0;
+}
+
+
+.par .image:hover{
+  scale:81%;
+
+}
+
+.text h2{
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+  text-align: left;
+  
+  
+  font-weight: 1;
+  letter-spacing: .4rem;
+}
+
+.text h3{
+  color: white;
+  font-size: 1.8rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+  
+  font-weight: 1;
+  letter-spacing: .4rem;
+}
+
+.text p{
+  color: white;
+  font-size: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+  
+  font-weight: 1;
+  letter-spacing: .1rem;
+  
+}
+
+.button-hp{
+  padding-bottom: 10px;
+  margin-left: 220px;
+  margin-top: 30px;
+}
+.button-trailer{
+  
+  margin-left: 450px;
+  border: 2px solid white;
+  
+  padding:20px 30px 20px 30px ;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+  letter-spacing: .2rem;
+  transition:  .2s ease-in-out;
+
+}
+
+.button-trailer:hover{
+  background-color: #9b9b9b;
+  color: #1c1c1c;
+}
+
+
+
+.copyright-area{
+  padding:30px 0 10px 500px;
+  background: #1d1d1d;
+  
+}
+
+
+.copyright-text p {
+  font-size: 1.7rem;
+  font-weight: 1;
+  text-align: center;
+  margin-left: -480px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: .2rem;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #585858;
+  text-decoration: none;
+  letter-spacing: .3rem;
+  margin-left: -20px;
+}
+
+.copyright-text p a:hover{
+  color: #9b9b9b;
+}
+.footer-menu{
+    margin-left: 10px;
+}
+.footer-menu li {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 1;
+    
+    letter-spacing: .3rem;
+    color: #878787;
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: rgb(212, 212, 212);
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+  text-decoration: none;
+}

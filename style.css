@@ -1,0 +1,45 @@
+@font-face {
+  font-family: harrypotterfont;
+  src: url(harry_p/HARRYP__.TTF);
+}
+h3{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  justify-content: center;
+  font-size: 75px;
+  font-family: harrypotterfont;
+  color: azure;
+  overflow: hidden;  
+}
+.hp-logo{
+  position: relative;
+  /* left: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:35%;
+  width:40%; 
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  padding-bottom: px;
+  overflow: hidden; 
+}
+.hp-logo:hover{
+  scale: 101%;
+  cursor: pointer;
+}
+.introvid{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+}
